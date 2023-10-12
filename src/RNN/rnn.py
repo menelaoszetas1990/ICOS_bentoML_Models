@@ -4,8 +4,10 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
-from functools import reduce
+from keras.models import Sequential
+from keras.layers import Dense, LSTM, Dropout
 import itertools
+from functools import reduce
 
 WHICH_CELL = 0
 
@@ -19,8 +21,8 @@ for cell in range(5):
     for category in range(3):
         for device in range(5):
             rows = reduce(np.intersect1d, (np.where(train_data[:, 1] == cell), np.where(train_data[:, 2] == category), np.where(train_data[:, 3] == device)))
-            training_data[cell, category, device] = train_data[rows, 4] #load values
-            #training_data[cell, category, device] = train_data[rows, 5] #anomaly values
+            # load values
+            training_data[cell, category, device] = train_data[rows, 4]
 
 # plot training data (averaged every 1 day)
 # total_days = 16608/(4*24)
@@ -102,43 +104,35 @@ X_train, y_train = np.array(X_train), np.array(y_train)
 # Reshaping
 X_train = np.reshape(X_train, (X_train.shape[0], X_train.shape[1], 1))
 
-
-
 # Part 2 - Building the RNN
-
-# Importing the Keras libraries and packages
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Dense
-from tensorflow.keras.layers import LSTM
-from tensorflow.keras.layers import Dropout
 
 # Initialising the RNN
 regressor = Sequential()
 
 # Adding the first LSTM layer and some Dropout regularisation
-regressor.add(LSTM(units = 50, return_sequences = True, input_shape = (X_train.shape[1], 1)))
+regressor.add(LSTM(units=50, return_sequences = True, input_shape=(X_train.shape[1], 1)))
 regressor.add(Dropout(0.2))
 
 # Adding a second LSTM layer and some Dropout regularisation
-regressor.add(LSTM(units = 50, return_sequences = True))
+regressor.add(LSTM(units=50, return_sequences=True))
 regressor.add(Dropout(0.2))
 
 # Adding a third LSTM layer and some Dropout regularisation
-regressor.add(LSTM(units = 50, return_sequences = True))
+regressor.add(LSTM(units=50, return_sequences=True))
 regressor.add(Dropout(0.2))
 
 # Adding a fourth LSTM layer and some Dropout regularisation
-regressor.add(LSTM(units = 50))
+regressor.add(LSTM(units=50))
 regressor.add(Dropout(0.2))
 
 # Adding the output layer
-regressor.add(Dense(units = 1))
+regressor.add(Dense(units=1))
 
 # Compiling the RNN
-regressor.compile(optimizer = 'adam', loss = 'mean_squared_error')
+regressor.compile(optimizer='adam', loss='mean_squared_error')
 
 # Fitting the RNN to the Training set
-regressor.fit(X_train, y_train, epochs = 20, batch_size = 64)
+regressor.fit(X_train, y_train, epochs=20, batch_size=64)
 
 # Create models folder
 import os

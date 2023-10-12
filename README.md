@@ -15,3 +15,4 @@ rnn -> keras
 Anomaly_Detector -> scikit learn
 
 **BentoML_load_{}.py** loads the saved models and runs a sample validation.
+It also saves a sample set to send to Ceadar 
