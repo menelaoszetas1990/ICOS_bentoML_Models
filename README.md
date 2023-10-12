@@ -4,9 +4,14 @@ In this project, the first 5 LSTM and first 5 keras models of Anastasios Giannop
 To install requirements use: 
 pip install -r .\requirements.txt
 
-**rnn.py** is the main file created by Anastasios Giannopoulos.
-The models created by running this file are saved to models folder
+**src/RNN/rnn.py** is the main file created by Anastasios Giannopoulos.
+The models created by running this file are saved to src/RNN/models folder with keras save model. 
 
-**BentoML_save.py** transfers the created model from rnn.py to bentoML.
+**src/Anomaly_Detector/Anomaly_Detector.py** is the file created by Anastasios Giannopoulos for Anomaly Detection.
+The models created by running this file are saved to src/Anomaly_Detector/models folder with pkl.
 
-**BentoML_load.py** loads the saved models and runs a sample validation.
+**BentoML_save_{}.py** transfers the created models to bentoML.
+rnn -> keras
+Anomaly_Detector -> scikit learn
+
+**BentoML_load_{}.py** loads the saved models and runs a sample validation.
