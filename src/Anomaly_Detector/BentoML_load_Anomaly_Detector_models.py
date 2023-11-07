@@ -47,7 +47,10 @@ for _cell in range(5):
 
     # 96 is for one day set
     np.save("./samples/icos_nkua_clf_anomaly_detection_cell{}".format(WHICH_CELL), load_set_scaled[:96, :])
+    np.save("./samples/icos_nkua_clf_anomaly_detection_cell{}_groundtruth_values".format(WHICH_CELL), load_set_scaled[:96, :])
     # Decision Tree
     model.fit(load_set_scaled, np.reshape(anomaly_set, -1))
     print(model.score(load_set_scaled, anomaly_set))
     print(confusion_matrix(anomaly_set, model.predict(load_set_scaled)))
+
+    print(sc.inverse_transform(model.predict(load_set_scaled).reshape(-1, 1)))

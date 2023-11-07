@@ -12,7 +12,7 @@ from sklearn.preprocessing import MinMaxScaler
 from sklearn.metrics import confusion_matrix
 from sklearn.tree import DecisionTreeClassifier
 
-WHICH_CELL = 4
+WHICH_CELL = 0
 
 # Importing the training set
 dataset_train = pd.read_csv('./data/Training_data.csv')
@@ -95,9 +95,9 @@ if not os.path.isdir('models'):
     os.makedirs('models')
 
 # save
-with open('./models/AnomalyDetector_cell' + str(WHICH_CELL) + '.pkl', 'wb') as f:
-    pickle.dump(clf, f)
-
-# load
-with open('./models/AnomalyDetector_cell' + str(WHICH_CELL) + '.pkl', 'rb') as f:
-    clf = pickle.load(f)
+# with open('./models/AnomalyDetector_cell' + str(WHICH_CELL) + '.pkl', 'wb') as f:
+#     pickle.dump(clf, f)
+#
+# # load
+# with open('./models/AnomalyDetector_cell' + str(WHICH_CELL) + '.pkl', 'rb') as f:
+#     clf = pickle.load(f)

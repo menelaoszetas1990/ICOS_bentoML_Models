@@ -5,21 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b32e03d0-c445-4ac7-891f-5a422dc09601" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Anomaly_Detector/samples/icos_nkua_clf_anomaly_detection_cell0.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Anomaly_Detector/samples/icos_nkua_clf_anomaly_detection_cell1.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Anomaly_Detector/samples/icos_nkua_clf_anomaly_detection_cell2.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Anomaly_Detector/samples/icos_nkua_clf_anomaly_detection_cell3.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Anomaly_Detector/samples/icos_nkua_clf_anomaly_detection_cell4.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RNN/samples/icos_nkua_rnn_lstm_cell0.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RNN/samples/icos_nkua_rnn_lstm_cell1.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RNN/samples/icos_nkua_rnn_lstm_cell2.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RNN/samples/icos_nkua_rnn_lstm_cell3.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RNN/samples/icos_nkua_rnn_lstm_cell4.npy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Anomaly_Detector/Anomaly_Detector.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Anomaly_Detector/Anomaly_Detector.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Anomaly_Detector/BentoML_load_Anomaly_Detector_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Anomaly_Detector/BentoML_load_Anomaly_Detector_models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RNN/BentoML_load_LSTM_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/RNN/BentoML_load_LSTM_models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RNN/rnn.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/RNN/rnn.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,17 +27,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Da-Wi/IdeaProjects/BentoML_NKUA_firstIteration/src/Anomaly_Detector",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Da-Wi/IdeaProjects/BentoML_NKUA_firstIteration/src/Anomaly_Detector&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Da-Wi\IdeaProjects\BentoML_NKUA_firstIteration\src\Anomaly_Detector" />
@@ -127,27 +115,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="BentoML_save_Anomaly_Detector_models" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="BentoML_NKUA_first_iteration" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/Anomaly_Detector" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/Anomaly_Detector/BentoML_save_Anomaly_Detector_models.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="BentoML_save_LSTM_models" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="BentoML_NKUA_first_iteration" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -169,13 +136,34 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="rnn" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="BentoML_NKUA_first_iteration" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/RNN" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/RNN/rnn.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.BentoML_load_Anomaly_Detector_models" />
+        <item itemvalue="Python.rnn" />
         <item itemvalue="Python.BentoML_load_LSTM_models (1)" />
-        <item itemvalue="Python.BentoML_save_LSTM_models" />
-        <item itemvalue="Python.BentoML_save_Anomaly_Detector_models" />
         <item itemvalue="Python.Anomaly_Detector" />
+        <item itemvalue="Python.BentoML_save_LSTM_models" />
       </list>
     </recent_temporary>
   </component>
@@ -189,5 +177,31 @@
       <updated>1696511596523</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/Anomaly_Detector/Anomaly_Detector.py</url>
+          <line>87</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/RNN/BentoML_load_LSTM_models.py</url>
+          <line>71</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/RNN/rnn.py</url>
+          <line>195</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/Anomaly_Detector/BentoML_load_Anomaly_Detector_models.py</url>
+          <line>53</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
